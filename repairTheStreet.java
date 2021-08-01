@@ -1,4 +1,4 @@
-void repareTheStreet () {
+void repairTheStreet () {
   repeat (10) {
     if (rightIsClear ()) {
       turnRight ();
