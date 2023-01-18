@@ -1,19 +1,16 @@
 void mowTheLawn () {
-  repeat (2) {
+  repeat (3) {
     mowRow ();
     turnLeft ();
     moveForward ();
     turnLeft ();
     mowRow ();
-    turnRight ();
-    moveForward ();
-    turnRight ();
+    if (rightIsClear()) {
+      turnRight();
+      moveForward();
+      turnRight();
+    }
   }
-  mowRow ();
-  turnLeft ();
-  moveForward ();
-  turnLeft ();
-  mowRow ();
 }
 
 void mowRow () {
